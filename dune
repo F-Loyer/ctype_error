@@ -1,0 +1,9 @@
+(rule
+ (deps a.c Makefile)
+ (targets libtest.a)
+ (action (run %{make} build)))
+(executable
+ (name main)
+ (modes native)
+ (libraries ctypes ctypes.foreign)
+ (foreign_archives test))
