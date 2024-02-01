@@ -2,10 +2,10 @@
 
 This example shows an example of fail of using a C function in a `.a` archive with ctypes with the gcc toolchain.
 
-`a.c` expose a `f` function. The `Makefile` compiles it into a `a.o` object and packages it in a `libtest.a` archive.
+`a.c` exposes a `f` function. The `Makefile` compiles it into a `a.o` object and packages it in a `libtest.a` archive.
 
 The `main.ml` file tries to call this function with the Ctype module. It fails beacause Ctypes uses a dynamic link and 
-the gcc toolchain only extract from the `libtest.a` archives the object files which are statically linked.
+the gcc toolchain only extracts from the `libtest.a` archives the object files which are statically linked.
 
 The error is:
 
