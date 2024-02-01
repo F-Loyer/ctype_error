@@ -1,6 +1,6 @@
 # ctype_error
 
-This example shows an example of fail of using a C function win a `.a` archive with ctypes with the gcc toolchain.
+This example shows an example of fail of using a C function in a `.a` archive with ctypes with the gcc toolchain.
 
 `a.c` expose a `f` function. The `Makefile` compile it into a `a.o` object and package it in a `libtest.a` arcvive.
 
