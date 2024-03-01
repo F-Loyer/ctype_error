@@ -2,6 +2,6 @@ open Ctypes
 
 open Foreign
 
-let f = foreign "f" (int @-> returning int)
-external __f__ : unit -> unit = "f" 
-let () = print_int @@ f 42
+let my_function = foreign "my_function" (int @-> returning int)
+external __my_function__ : unit -> unit = "my_function" 
+let () = print_int @@ my_function 42

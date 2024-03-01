@@ -5,5 +5,6 @@
 (executable
  (name main)
  (modes native)
+;  (link_flags -cclib -Wl,-Wl,--export-all-symbols)
  (libraries ctypes ctypes.foreign)
  (foreign_archives test))
